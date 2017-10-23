@@ -1,0 +1,65 @@
+@charset "utf-8";
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    position: relative;
+    height: 100%;
+}
+.top-navigation{
+    background-color:#428BCA;
+    border-bottom:2px solid #428BCA;
+    height:58px;
+}
+.gray-bg{
+    height:60px;
+    
+    background-color:#428BCA;
+}
+.top-navigation .navbar-brand{
+    height:60px;
+    background-color:#3c7db6;
+    padding:20px 78px 20px 12px;
+}
+.gray-bg li{
+    height: 60px;
+}
+.top-navigation .nav > li > a{
+    height: 60px;
+    padding: 20px 25px;
+    color:#fff;
+}
+.top-navigation .nav > li > a:hover{
+    color:#fff;
+    background-color:#3c7db6;
+}
+.top-navigation .nav > li.active {
+    background-color:#3c7db6;
+}
+.top-navigation .nav > li.active > a{
+    color:#fff;
+}
+.top-navigation .elwan-nav-bg li{
+    width: 230px;
+    background-color:#fff;
+    height: 45px;
+     border-bottom:1px solid #e7e7e7;
+}
+.top-navigation .elwan-nav-bg li a{
+    color:#555;
+    padding: 0px;
+    line-height: 42px;
+    padding-left: 15px;
+    text-align: left;
+    height: 45px;
+    font-weight: normal;
+   
+}
+.top-navigation .elwan-nav-bg{
+    background-color:#fff;
+    height: auto;
+}
+.nav > li > a i{
+    width: 20px;
+}

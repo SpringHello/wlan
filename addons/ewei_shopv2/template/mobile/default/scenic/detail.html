@@ -1,0 +1,61 @@
+
+
+<style>
+    .fui-cell-group{width:100%;}
+</style>
+<meta charset="utf-8">
+<div class='fui-page fui-page-current  page-goods-detail' id='page-goods-detail-index'>
+    {php $this->followBar()}
+
+    {if empty($err)}
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back" id="btn-back"></a>
+        </div>
+        <div class="title">
+            <div id="tab" class="fui-tab fui-tab-danger">
+                <a data-tab="tab1" class="tab active">资11源</a>
+                <a data-tab="tab2" class="tab">详情</a>
+
+                <a data-tab="tab3" class="tab">参数</a>
+
+                
+            </div>
+        </div>
+        <div class="fui-header-right"></div>
+    </div>
+    {else}
+    <div class="fui-header ">
+        <div class="fui-header-left">
+            <a class="back" id="btn-back"></a>
+        </div>
+        <div class="title">
+            找不到宝贝
+        </div>
+    </div>
+    {/if}
+    <div class="fui-content param-block  {if !$goods['canbuy']}notbuy{/if}">
+        <div class="fui-cell-group">
+           
+            <div class="fui-cell">
+                <div class="fui-cell-label" >{$scenic['jingquname']}</div>
+                <div class="fui-cell-info overflow">{$scenic['jingqugonglue']}</div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+{template 'scenic/picker'}
+
+
+</div>
+
+<style type="text/css">
+    .share-text1{text-align: center;padding:0.5rem 0.5rem 0;font-size:0.6rem;color:#666;line-height: 1rem;}
+    .share-text2{text-align: center;padding:0 0.5rem 0.5rem;font-size:0.6rem;color:#666;line-height: 1rem;}
+</style>
+
+{template '_footer'}
